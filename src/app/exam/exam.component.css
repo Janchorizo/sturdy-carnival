@@ -1,0 +1,51 @@
+.exam{
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 100px;
+    margin: .4em .2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(36, 37, 38, 0.18);
+}
+.exam span{
+    font-family: kiwi;
+    font-size: 24px;
+    color: darkslategrey;
+}
+.exam span.mark{
+    font-size: 16px;
+    font-weight: bold;
+    color: firebrick;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: solid 3px firebrick;
+    text-align: center;
+    position: absolute;
+    top: .1em;
+    right: .1em;
+}
+.exam button{
+    display: none;
+    position: absolute;
+    bottom: -1em;
+    padding: 2px;
+    border: solid 2px #9381FF;
+    border-radius: 10px;
+    background-color: snow;
+    font-family: kiwi;
+    font-weight: 400;
+    color: #9381FF;
+    cursor: pointer;
+}
+.exam button:hover{
+    border-color: whitesmoke;
+    background-color: #9381FF;
+    color: whitesmoke;
+}
+.exam:hover button{
+    display: initial;
+}

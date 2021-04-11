@@ -1,0 +1,7 @@
+<div id='exam-container'>
+    <app-exam-editor></app-exam-editor>
+    <app-exam
+        *ngFor='let exam of examResults;let i=index;'
+        [index]='i'
+        [score]='exam'></app-exam>
+</div>
