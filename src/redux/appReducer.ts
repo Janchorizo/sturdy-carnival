@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 
 import { examsReducer } from './examsReducer';
-import { cdfReducer } from './cdfReducer';
+import { markBreaksReducer } from './markBreaksReducer';
 
 
 export const appReducer = combineReducers({
     exams: examsReducer,
-    // cdf: cdfReducer,
+    markBreaks: markBreaksReducer,
 });
