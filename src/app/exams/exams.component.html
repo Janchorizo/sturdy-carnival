@@ -1,5 +1,7 @@
-<p>exams works!</p>
-<p *ngFor='let exam of examResults'>
-    <b>{{ exam }}</b>
-</p>
-<button (click)='onAddClick()'>Add an exam</button>
+<div id='exam-container'>
+    <button (click)='onAddClick()'>Add an exam</button>
+    <app-exam
+        *ngFor='let exam of examResults;let i=index;'
+        [index]='i'
+        [score]='exam'></app-exam>
+</div>

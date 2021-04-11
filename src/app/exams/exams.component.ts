@@ -9,11 +9,10 @@ import { ExamsService } from '../exams.service';
 })
 export class ExamsComponent implements OnInit {
   examsService: ExamsService;
-  examResults: number[];
+  examResults!: number[];
 
   constructor(examsService: ExamsService) {
       this.examsService = examsService;
-      this.examResults = [];
   }
 
   ngOnInit(): void {
@@ -21,10 +20,8 @@ export class ExamsComponent implements OnInit {
   }
 
   private getResults() {
-      console.log(this.examsService)
       this.examsService.getResults()
         .subscribe((results: number[]) => {
-            console.log(results)
             this.examResults = results
         });
   }
