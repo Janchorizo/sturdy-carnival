@@ -22,7 +22,7 @@ export class ExamsComponent implements OnInit {
   private getResults() {
       this.examsService.getResults()
         .subscribe((results: number[]) => {
-            this.examResults = results
+            this.examResults = results;
         });
   }
 
