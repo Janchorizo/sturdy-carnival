@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { appReducer } from '../redux/appReducer';
-import { CDFActions } from '../redux/cdfActions';
+import { MarkBreaksActions } from '../redux/markBreaksActions';
 import { ExamsActions } from '../redux/examsActions';
 import { createStore } from 'redux';
 import { ExamsComponent } from './exams/exams.component';
@@ -32,7 +32,7 @@ const store = createStore(appReducer);
   ],
   providers: [
     { provide: 'AppStore', useValue: store },
-    CDFActions,
+    MarkBreaksActions,
     ExamsActions
   ],
   bootstrap: [AppComponent]
