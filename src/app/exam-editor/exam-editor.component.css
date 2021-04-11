@@ -1,0 +1,45 @@
+.examEditor{
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 100px;
+    margin: .4em .2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(36, 37, 38, 0.18);
+}
+.examEditor span{
+    font-family: kiwi;
+    font-size: 24px;
+    color: darkslategrey;
+}
+.examEditor button.createButton{
+    display: none;
+    position: absolute;
+    bottom: -1em;
+    padding: 2px 6px;
+    border: solid 2px #9381FF;
+    border-radius: 10px;
+    background-color: snow;
+    font-family: kiwi;
+    font-weight: 400;
+    color: #9381FF;
+    cursor: pointer;
+}
+.examEditor button.createButton:hover{
+    border-color: whitesmoke;
+    background-color: #9381FF;
+    color: whitesmoke;
+}
+.examEditor:hover button.createButton{
+    display: initial;
+}
+.arrowButton{
+    background: none;
+    border:none;
+    font-size: 24px;
+    font-weight: bold;
+    color: darkslategrey;
+    cursor: pointer;
+}

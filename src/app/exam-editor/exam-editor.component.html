@@ -1,1 +1,16 @@
-<p>exam-editor works!</p>
+<div class='examEditor'>
+    <button
+        class='arrowButton'
+        (click)='onIncrementClick()'>
+        🢑
+    </button>
+    <span>{{ score }}</span>
+    <button
+        class='arrowButton'
+        (click)='onDecrementClick()'>
+        🢓
+    </button>
+    <button
+        class='createButton animate__animated animate__slideInUp animate__faster'
+        (click)='onAddClick()'>Add</button>
+</div>

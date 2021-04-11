@@ -6,7 +6,7 @@ import {
 } from './examsActions';
 
 
-const initialState: number[] = [];
+const initialState: number[] = [23, 40, 40, 56, 12, 78, 99];
 
 function hasParam (action: ReduxAction, key: string): boolean {
     return Object.hasOwnProperty.call(action.payload, key);
