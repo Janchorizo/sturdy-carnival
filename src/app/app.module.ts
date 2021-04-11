@@ -7,7 +7,9 @@ import { CDFActions } from '../redux/cdfActions';
 import { ExamsActions } from '../redux/examsActions';
 import { createStore } from 'redux';
 import { ExamsComponent } from './exams/exams.component';
-import { LiquidContainerComponent } from './liquid-container/liquid-container.component'
+import { LiquidContainerComponent } from './liquid-container/liquid-container.component';
+import { CdfSectionComponent } from './cdf-section/cdf-section.component';
+import { ExamsSectionComponent } from './exams-section/exams-section.component'
 
 const store = createStore(appReducer);
 
@@ -15,7 +17,9 @@ const store = createStore(appReducer);
   declarations: [
     AppComponent,
     ExamsComponent,
-    LiquidContainerComponent
+    LiquidContainerComponent,
+    CdfSectionComponent,
+    ExamsSectionComponent
   ],
   imports: [
     BrowserModule
