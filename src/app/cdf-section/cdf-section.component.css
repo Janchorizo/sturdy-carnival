@@ -1,0 +1,25 @@
+:host{
+    display: block;
+    width: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+#cdf-section{
+    margin: 1em 0 0 1em;
+}
+#cdf-section h1,
+#cdf-section h2{
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-family: kiwi;
+}
+#cdf-section h2{
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+#cdf-section p{
+    text-align: justify;
+    max-width: 500px;
+    border-left: solid 5px #9381FF;
+    padding: 0 2em;
+}
