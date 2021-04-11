@@ -10,10 +10,11 @@
 }
 img#classroom{
     width: calc(100% - 40px);
-    max-width: 500px;
-    height: 100px;
+    max-width: 340px;
+    height: auto;
     margin: 0 auto;
     display: block;
+    border-radius: 10px;
 }
 #exams-section h2{
     text-align: center;
@@ -23,4 +24,11 @@ img#classroom{
 }
 .text-muted{
     color: slategray;
+}
+#exams-section a{
+    position: fixed;
+    bottom: 5px;
+    right: 30px;
+    color: blueviolet;
+    text-decoration: none;
 }
