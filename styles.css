@@ -224,37 +224,37 @@ body{
 }
 @font-face{
     font-family: "oxygen";
-    src: url("/assets/fonts/Oxygen/Oxygen-Light.ttf");
+    src: url("sturdy-carnival//assets/fonts/Oxygen/Oxygen-Light.ttf");
     font-weight: 100;
     font-style: normal;
 }
 @font-face{
     font-family: "oxygen";
-    src: url("/assets/fonts/Oxygen/Oxygen-Regular.ttf");
+    src: url("/sturdy-carnival/assets/fonts/Oxygen/Oxygen-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 @font-face{
     font-family: "oxygen";
-    src: url("/assets/fonts/Oxygen/Oxygen-Bold.ttf");
+    src: url("/sturdy-carnival/assets/fonts/Oxygen/Oxygen-Bold.ttf");
     font-weight: 600;
     font-style: normal;
 }
 @font-face{
     font-family: "kiwi";
-    src: url("/assets/fonts/Kiwi_Maru/KiwiMaru-Light.ttf");
+    src: url("/sturdy-carnival/assets/fonts/Kiwi_Maru/KiwiMaru-Light.ttf");
     font-weight: 100;
     font-style: normal;
 }
 @font-face{
     font-family: "kiwi";
-    src: url("/assets/fonts/Kiwi_Maru/KiwiMaru-Regular.ttf");
+    src: url("/sturdy-carnival/assets/fonts/Kiwi_Maru/KiwiMaru-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 @font-face{
     font-family: "kiwi";
-    src: url("/assets/fonts/Kiwi_Maru/KiwiMaru-Medium.ttf");
+    src: url("/sturdy-carnival/assets/fonts/Kiwi_Maru/KiwiMaru-Medium.ttf");
     font-weight: 600;
     font-style: normal;
 }
