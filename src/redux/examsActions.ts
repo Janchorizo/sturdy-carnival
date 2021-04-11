@@ -15,3 +15,11 @@ export const removeResult: (payload: any, error: boolean)=>ReduxAction =
 
 export const clear: (payload: any, error: boolean)=>ReduxAction =
     createActionGenerator(CLEAR_RESULTS_ACTION);
+
+export class ExamsActions {
+    addResult: (payload: any, error: boolean)=>ReduxAction = addResult;
+
+    removeResult: (payload: any, error: boolean)=>ReduxAction = removeResult;
+
+    clear: (payload: any, error: boolean)=>ReduxAction = clear;
+}

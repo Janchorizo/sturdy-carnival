@@ -11,3 +11,10 @@ export const setCdf: (payload: any, error: boolean)=>ReduxAction =
 
 export const clear: (payload: any, error: boolean)=>ReduxAction =
     createActionGenerator(CLEAR_CDF_ACTION);
+
+// For bootstrapping purposes
+export class CDFActions {
+    setCdf: (payload: any, error: boolean)=>ReduxAction = setCdf;
+    
+    clear: (payload: any, error: boolean)=>ReduxAction = clear;
+}
