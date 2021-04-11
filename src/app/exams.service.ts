@@ -19,7 +19,7 @@ export class ExamsService{
   ) {
     this.appStore = appStore;
     this.examsActions = examsActions;
-    this.examResultsSubject = new BehaviorSubject(this.appStore.getState().results);
+    this.examResultsSubject = new BehaviorSubject(this.appStore.getState().exams);
 
     this.unsubscribeStore = this.appStore.subscribe(
         this.handleStoreUpdate.bind(this));
