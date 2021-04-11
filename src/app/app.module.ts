@@ -11,7 +11,8 @@ import { LiquidContainerComponent } from './liquid-container/liquid-container.co
 import { CdfSectionComponent } from './cdf-section/cdf-section.component';
 import { ExamsSectionComponent } from './exams-section/exams-section.component';
 import { ExamComponent } from './exam/exam.component';
-import { ExamEditorComponent } from './exam-editor/exam-editor.component'
+import { ExamEditorComponent } from './exam-editor/exam-editor.component';
+import { EcdfGraphComponent } from './ecdf-graph/ecdf-graph.component'
 
 const store = createStore(appReducer);
 
@@ -23,7 +24,8 @@ const store = createStore(appReducer);
     CdfSectionComponent,
     ExamsSectionComponent,
     ExamComponent,
-    ExamEditorComponent
+    ExamEditorComponent,
+    EcdfGraphComponent
   ],
   imports: [
     BrowserModule
