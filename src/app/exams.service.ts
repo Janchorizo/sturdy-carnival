@@ -15,7 +15,7 @@ export class ExamsService{
 
   constructor(
     @Inject('AppStore') appStore: any,
-      examsActions: ExamsActions
+    examsActions: ExamsActions
   ) {
     this.appStore = appStore;
     this.examsActions = examsActions;
