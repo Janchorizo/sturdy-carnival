@@ -2,3 +2,42 @@
 body{
     margin: 0;
 }
+*{
+    font-family: oxygen, sans-serif;
+}
+@font-face{
+    font-family: "oxygen";
+    src: url("/assets/fonts/Oxygen/Oxygen-Light.ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face{
+    font-family: "oxygen";
+    src: url("/assets/fonts/Oxygen/Oxygen-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: "oxygen";
+    src: url("/assets/fonts/Oxygen/Oxygen-Bold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+    font-family: "kiwi";
+    src: url("/assets/fonts/Kiwi_Maru/KiwiMaru-Light.ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face{
+    font-family: "kiwi";
+    src: url("/assets/fonts/Kiwi_Maru/KiwiMaru-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: "kiwi";
+    src: url("/assets/fonts/Kiwi_Maru/KiwiMaru-Medium.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
