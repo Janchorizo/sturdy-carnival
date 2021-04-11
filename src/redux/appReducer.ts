@@ -6,5 +6,5 @@ import { cdfReducer } from './cdfReducer';
 
 export const appReducer = combineReducers({
     exams: examsReducer,
-    cdf: cdfReducer,
+    // cdf: cdfReducer,
 });
