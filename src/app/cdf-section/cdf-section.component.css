@@ -19,7 +19,10 @@
 }
 #cdf-section p{
     text-align: justify;
+    max-width: calc(500px + 2em);
+}
+#cdf-section p:first-of-type{
+    padding: 0 2em;
     max-width: 500px;
     border-left: solid 5px #9381FF;
-    padding: 0 2em;
 }

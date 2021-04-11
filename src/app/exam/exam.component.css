@@ -14,6 +14,20 @@
     font-size: 24px;
     color: darkslategrey;
 }
+.exam span.mark{
+    font-size: 16px;
+    font-weight: bold;
+    color: firebrick;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: solid 3px firebrick;
+    text-align: center;
+    position: absolute;
+    top: .1em;
+    right: .1em;
+}
 .exam button{
     display: none;
     position: absolute;

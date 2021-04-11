@@ -11,7 +11,7 @@ export class MarkBreaksService{
   appStore: any;
   markBreaksActions: any;
   unsubscribeStore: CallableFunction;
-  markBreaks: object;
+  markBreaks!: object;
   markBreaksSubject: BehaviorSubject<object>;
 
   constructor(
@@ -20,7 +20,9 @@ export class MarkBreaksService{
   ) {
     this.appStore = appStore;
     this.markBreaksActions = markBreaksActions;
+  
     const breaks = this.appStore.getState().markBreaks;
+    this.markBreaks = breaks;
     this.markBreaksSubject = new BehaviorSubject(breaks);
 
     this.unsubscribeStore = this.appStore.subscribe(
@@ -37,15 +39,20 @@ export class MarkBreaksService{
     return this.markBreaksSubject;
   }
 
+  setBreak(mark: string, score: number) {
+    const payload = {mark, score};
+    this.appStore.dispatch(this.markBreaksActions.setBreak(payload));
+  }
+
   calculateMark(score: number): string {
     let mark = 'E';
 
     const scores = Object.entries(this.markBreaks)
-      .sort((a, b) => a < b ? 1 : 0);
+      .sort((a, b) => a[0] < b[0] ? 1 : -1);
 
     scores.forEach((markBreak: any) => {
-      if (score >= markBreak[0]) {
-        mark = markBreak[1];
+      if (score >= markBreak[1]) {
+        mark = markBreak[0];
       }
     });
 

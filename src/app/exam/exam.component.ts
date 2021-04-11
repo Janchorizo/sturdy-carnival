@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ExamsService } from '../exams.service';
+import { MarkBreaksService } from '../mark-breaks.service';
 
 
 @Component({
@@ -9,16 +10,28 @@ import { ExamsService } from '../exams.service';
 })
 export class ExamComponent implements OnInit {
   examsService: ExamsService;
+  markBreaksService: MarkBreaksService;
   @Input()
   index!: number;
   @Input()
   score!: number;
+  mark: string;
 
-  constructor(examsService: ExamsService) {
+  constructor(examsService: ExamsService, markBreaksService: MarkBreaksService) {
     this.examsService = examsService;
+    this.markBreaksService = markBreaksService;
+    this.mark = this.markBreaksService.calculateMark(this.score);
   }
 
   ngOnInit(): void {
+    this.getBreaks();
+  }
+
+  private getBreaks() {
+    this.markBreaksService.getBreaks()
+    .subscribe(() => {
+      this.mark = this.markBreaksService.calculateMark(this.score);
+    });
   }
 
   onDeleteClick() {

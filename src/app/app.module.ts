@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; // <-- ngModel lives here
 
 import { AppComponent } from './app.component';
 import { appReducer } from '../redux/appReducer';
@@ -12,7 +13,8 @@ import { CdfSectionComponent } from './cdf-section/cdf-section.component';
 import { ExamsSectionComponent } from './exams-section/exams-section.component';
 import { ExamComponent } from './exam/exam.component';
 import { ExamEditorComponent } from './exam-editor/exam-editor.component';
-import { EcdfGraphComponent } from './ecdf-graph/ecdf-graph.component'
+import { EcdfGraphComponent } from './ecdf-graph/ecdf-graph.component';
+import { MarkBreaksComponent } from './mark-breaks/mark-breaks.component'
 
 const store = createStore(appReducer);
 
@@ -25,10 +27,12 @@ const store = createStore(appReducer);
     ExamsSectionComponent,
     ExamComponent,
     ExamEditorComponent,
-    EcdfGraphComponent
+    EcdfGraphComponent,
+    MarkBreaksComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     { provide: 'AppStore', useValue: store },
