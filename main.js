@@ -925,7 +925,7 @@ class ExamsSectionComponent {
     }
 }
 ExamsSectionComponent.ɵfac = function ExamsSectionComponent_Factory(t) { return new (t || ExamsSectionComponent)(); };
-ExamsSectionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ExamsSectionComponent, selectors: [["app-exams-section"]], decls: 18, vars: 0, consts: [["id", "exams-section"], ["id", "classroom", "src", "/assets/Classroom-with-Kids-01.jpg"], ["target", "blank", "href", "https://www.vecteezy.com/free-vector/kids"], [1, "text-muted"]], template: function ExamsSectionComponent_Template(rf, ctx) { if (rf & 1) {
+ExamsSectionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ExamsSectionComponent, selectors: [["app-exams-section"]], decls: 18, vars: 0, consts: [["id", "exams-section"], ["id", "classroom", "src", "/sturdy-carnival/assets/Classroom-with-Kids-01.jpg"], ["target", "blank", "href", "https://www.vecteezy.com/free-vector/kids"], [1, "text-muted"]], template: function ExamsSectionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 2);
